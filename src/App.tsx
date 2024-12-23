@@ -1,11 +1,11 @@
-
+import Header from './layouts/Header'
 function App() {
 
 
   return (
-    <>
-      hhhhhhhh
-    </>
+    <div className='w-[1640px]'>
+      <Header />
+    </div>
   )
 }
 

@@ -47,6 +47,7 @@ import HeaderSearch from './HeaderSearch';
 
 const Navigation = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [isCompanyMenuVisible, setIsCompanyMenuVisible] = useState(false);
 
   const toggleSearch = () => {
     setIsSearchVisible(!isSearchVisible);
@@ -59,7 +60,23 @@ const Navigation = () => {
           <img src={logo} alt="" />
           <div className="flex gap-7 items-center justify-between mt-3">
             <ul className="mt-7 h-[50px] flex gap-8">
-              <li className="hover:border-b-4 border-my-red">КОМПАНИЯ</li>
+              <li 
+                className="relative"
+                onMouseEnter={() => setIsCompanyMenuVisible(true)}
+                onMouseLeave={() => setIsCompanyMenuVisible(false)}
+              >
+                <span className="hover:border-b-4 border-my-red cursor-pointer">КОМПАНИЯ</span>
+                {isCompanyMenuVisible && (
+                  <div className="absolute left-0 mt-2 bg-black/35 text-white  rounded shadow-lg">
+                    <ul>
+                      <li className="hover:bg-red-500 flex items-center pl-1 w-[228px] h-10 mb-2 font-Geometria font-medium cursor-pointer">О компании</li>
+                      <li className="hover:bg-red-500 flex items-center pl-1 w-[228px] h-10 mb-2 font-Geometria font-medium cursor-pointer">Лицензии</li>
+                      <li className="hover:bg-red-500 flex items-center pl-1 w-[228px] h-10 mb-2 font-Geometria font-medium cursor-pointer">Партнеры</li>
+                      <li className="hover:bg-red-500 flex items-center pl-1 w-[228px] h-10 mb-2 font-Geometria font-medium cursor-pointer">Отзывы Клиентов</li>
+                    </ul>
+                  </div>
+                )}
+              </li>
               <li className="hover:border-b-4 border-my-red">КАТАЛОГ</li>
               <li className="hover:border-b-4 border-my-red">УСЛУГИ</li>
               <li className="hover:border-b-4 border-my-red">ИНФОРМАЦИЯ</li>
@@ -86,3 +103,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+

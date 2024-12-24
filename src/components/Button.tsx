@@ -1,8 +1,11 @@
-const Button = ({className, children}) => {
+import { FC } from 'react';
+import { ButtonProps } from '../types/Button.types';
+
+const Button: FC<ButtonProps> = ({ className, children, onClick }) => {
     return (
-        <div className={className}>
+        <button className={className} onClick={onClick}>
             {children}
-        </div>
+        </button>
     );
 };
 

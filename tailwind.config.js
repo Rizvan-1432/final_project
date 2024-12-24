@@ -21,6 +21,8 @@ export default {
       },
       backgroundImage: {
         header: "url('./assets/img/banner.png')",
+        carPhone: "url('./assets/img/carphone.png')",
+        services: "url('./assets/img/services.png')"
       },
       spacing: {
         '22': '88px',

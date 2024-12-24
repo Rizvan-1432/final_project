@@ -21,6 +21,31 @@ export default {
       },
       backgroundImage: {
         header: "url('./assets/img/banner.png')",
+        carPhone: "url('./assets/img/carphone.png')",
+        services: "url('./assets/img/services.png')"
+      },
+      spacing: {
+        '22': '88px',
+        '36': '144px',
+        '42': '168px',
+        '52': '200px',
+        '56': '228px',
+        '69': '264px',
+        '70': '272px',
+        '71': '282px',
+        '75': '338px',
+        '90': '356px',
+        '91': '360px',
+        '97': '400px',
+        '98': '456px',
+        '100': '500px',
+        '104': '552px',
+        '105': '554px',
+        '108': '600px',
+        '110': '622px',
+        '120': '840px',
+        '164': '1640px',
+        '128': '1128px'
       }
     },
   },

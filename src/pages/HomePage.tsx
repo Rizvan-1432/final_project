@@ -1,11 +1,15 @@
-
+import CarAccessories from '../layouts/home/CarAccessories';
+import HomeFirstBanner from '../layouts/home/HomeFirstBanner';
+import Services from '../layouts/home/Services';
 
 const HomePage = () => {
-    return (
-        <div className='w-80 h-80 text-2xl font-Geometria'>
-        
-        </div>
-    );
+  return (
+    <div className="text-2xl">
+      <HomeFirstBanner />
+      <CarAccessories />
+      <Services />
+    </div>
+  );
 };
 
 export default HomePage;

@@ -1,3 +1,4 @@
+
 // HeaderSearch.tsx
 // import close from '../assets/icons/close.svg';
 // import Button from '../components/Button';
@@ -39,9 +40,8 @@
 
 
 import { useState } from 'react';
-import close from '../assets/icons/close.svg';
-import Button from '../components/Button';
-import React from 'react';
+import close from '../../assets/icons/close.svg';
+import Button from '../../components/Button';
 
 interface HeaderSearchProps {
   onClose: () => void;
@@ -64,8 +64,8 @@ const HeaderSearch: React.FC<HeaderSearchProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="w-full h-[72px] flex items-center justify-center bg-my-black-100/75">
-      <div className="w-[1100px] flex items-center gap-3">
+    <div className="w-164 h-[72px] flex items-center justify-center bg-my-black-100/75">
+      <div className='w-[1100px] flex items-center gap-3'>
         <div className="w-[970px] h-10 flex bg-white">
           <svg
             width="40"
@@ -82,7 +82,7 @@ const HeaderSearch: React.FC<HeaderSearchProps> = ({ onClose }) => {
             />
           </svg>
           <input
-            className="ml-4 w-full font-Geometria font-medium text-sm outline-none"
+            className="ml-4 w-full font-medium text-sm outline-none"
             type="search"
             placeholder="Введите запрос..."
             value={searchQuery}

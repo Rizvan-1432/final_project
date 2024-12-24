@@ -1,11 +1,11 @@
-
+import HomeFirstBanner from '../layouts/home/HomeFirstBanner';
 
 const HomePage = () => {
-    return (
-        <div className='w-80 h-80 text-2xl font-Geometria'>
-        
-        </div>
-    );
+  return (
+    <div className="text-2xl">
+      <HomeFirstBanner />
+    </div>
+  );
 };
 
 export default HomePage;

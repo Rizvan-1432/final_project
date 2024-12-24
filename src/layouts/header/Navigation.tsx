@@ -1,7 +1,7 @@
-import logo from '../assets/img/logo.png';
-import search from '../assets/icons/search.svg';
-import basket from '../assets/icons/basket.svg';
-import Button from '../components/Button';
+import logo from '../../assets/img/logo.png';
+import search from '../../assets/icons/search.svg';
+import basket from '../../assets/icons/basket.svg';
+import Button from '../../components/Button';
 
 const Navigation = () => {
   return (
@@ -16,7 +16,7 @@ const Navigation = () => {
             <li className="hover:border-b-4 border-my-red">ИНФОРМАЦИЯ</li>
             <li className="hover:border-b-4 border-my-red">КОНТАКТЫ</li>
           </ul>
-          <Button className="w-[168px] h-10 pt-0.5 flex justify-center items-center border-4 border-my-red font-Geometria font-bold text-xs">
+          <Button className="w-[168px] h-10 pt-0.5 flex justify-center items-center border-4 border-my-red metria font-bold text-xs">
             ЗАКАЗАТЬ ЗВОНОК
           </Button>
           <button>
@@ -24,7 +24,7 @@ const Navigation = () => {
           </button>
           <div className="flex items-center gap-1">
             <img src={basket} alt="" />
-            <div className="w-8 h-8 flex justify-center items-center bg-my-red rounded-full font-Geometria font-bold tracking-tighter pt-0.5">
+            <div className="w-8 h-8 flex justify-center items-center bg-my-red rounded-full font-bold tracking-tighter pt-0.5">
               0
             </div>
           </div>

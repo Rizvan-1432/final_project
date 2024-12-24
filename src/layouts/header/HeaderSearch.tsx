@@ -1,9 +1,9 @@
-import close from '../assets/icons/close.svg';
-import Button from '../components/Button';
+import close from '../../assets/icons/close.svg';
+import Button from '../../components/Button';
 
 const HeaderSearch = () => {
   return (
-    <div className="w-[1640px] h-[72px] flex items-center justify-center bg-my-black-100/75">
+    <div className="w-164 h-[72px] flex items-center justify-center bg-my-black-100/75">
       <div className='w-[1100px] flex items-center gap-3'>
         <div className="w-[970px] h-10 flex bg-white">
           <svg
@@ -21,7 +21,7 @@ const HeaderSearch = () => {
             />
           </svg>
           <input
-            className="ml-4 w-full font-Geometria font-medium text-sm outline-none"
+            className="ml-4 w-full font-medium text-sm outline-none"
             type="search"
           />
         </div>

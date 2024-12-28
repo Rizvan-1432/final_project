@@ -4,9 +4,11 @@ function App() {
 
 
   return (
-    <div className='w-164 font-Geometria'>
-      <Header />
-      <HomePage />
+    <div className="w-full min-h-screen flex justify-center">
+      <div className="w-full max-w-[1640px]">
+        <Header />
+        <HomePage />
+      </div>
     </div>
   )
 }

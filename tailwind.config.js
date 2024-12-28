@@ -14,15 +14,20 @@ export default {
         },
         'my-gray': '#A5A5A5',
         'my-red': '#C53720',
-        'my-green': '#3CC051'
+        'my-green': '#3CC051',
+        'my-white': '#FFFFFF'
       },
       fontFamily: {
-        Geometria: 'Geometria'
+        'Geometria': ['Geometria', 'sans-serif']
       },
       backgroundImage: {
-        header: "url('./assets/img/banner.png')",
+        'header': "url('./src/assets/img/banner.png')",
         carPhone: "url('./assets/img/carphone.png')",
         services: "url('./assets/img/services.png')"
+      },
+      backgroundColor: {
+        'my-black-100': '#1D1D1B',
+        'my-red': '#C53720',
       },
       spacing: {
         '22': '88px',

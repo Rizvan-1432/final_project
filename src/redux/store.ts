@@ -1,13 +1,13 @@
+// store.ts
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-
-// Импортируйте ваши редьюсеры здесь
-// import someReducer from './features/someSlice';
+import headerSearchReducer from '../redux/slice/HeaderSearchSlice';
+import basketReducer from '../redux/slice/basketSlice';
 
 export const store = configureStore({
   reducer: {
-    // Добавьте редьюсеры сюда
-    // example: some: someReducer,
+    headerSearch: headerSearchReducer, 
+    basket: basketReducer,
   },
 });
 

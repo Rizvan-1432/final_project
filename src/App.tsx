@@ -1,3 +1,4 @@
+import Footer from './layouts/Footer'
 import Header from './layouts/header/Header'
 import HomePage from './pages/HomePage'
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className='w-164 font-Geometria'>
       <Header />
       <HomePage />
+      <Footer />
     </div>
   )
 }

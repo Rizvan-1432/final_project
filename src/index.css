@@ -16,6 +16,19 @@
     background-repeat: no-repeat;
 }
 
+.box {
+  clip-path: polygon(
+    5% 0%,   /* Верхний левый угол срезанный */
+    100% 0%,  /* Верхний правый угол */
+    100% 100%, /* Нижний правый угол срезанный */
+    100% 100%, /* Нижний правый угол */
+    0% 100%,  /* Нижний левый угол */
+    0% 15%    /* Верхний левый угол */
+  );
+  background: transparent;
+  box-sizing: border-box; /* Учитываем границы */
+}
+
 @font-face {
   font-family: 'Geometria';
   font-weight: 100;

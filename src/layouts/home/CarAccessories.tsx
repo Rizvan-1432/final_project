@@ -16,7 +16,7 @@ const CarAccessories = () => {
   };
 
   return (
-    <div className="w-164 h-[1244px] pt-22 flex flex-col items-center bg-carPhone">
+    <div className="w-164 h-[1244px] flex flex-col items-center bg-carPhone">
       <Headings className="w-[756px] text-center text-4xl pb-5 font-bold uppercase border-b-4 border-my-red">
         Автотовары: аксессуары, расходники и многое другое
       </Headings>

@@ -4,6 +4,7 @@ import PaymentModal from '../../components/modals/PaymentModal';
 import ConsultationModal from '../../components/modals/ConsultationModal';
 import QualityModal from '../../components/modals/QualityModal';
 import ContactModal from '../../components/modals/ContactModal';
+import ArrowRight from '../../components/ArrowRight.tsx';
 
 const { banner } = database;
 
@@ -30,19 +31,20 @@ const HomeFirstBanner = () => {
   return (
     <div className="w-full bg-my-black-200">
       <div className="max-w-[1640px] mx-auto">
-        <ul className="flex justify-center text-white">
-          {banner.map((el, i) => (
-            <li
-              key={i}
-              className="background w-71 h-70 flex flex-col items-center justify-center gap-6 cursor-pointer"
-              onClick={() => handleBannerClick(i)}
-            >
-              <img src={el.img} alt="" />
-              <h2 className="text-center text-base font-medium w-56">{el.title}</h2>
-              {el.arrow && <img src={el.arrow} alt="" />}
-            </li>
-          ))}
-        </ul>
+          <ul className="flex justify-center text-white">
+        {banner.map((el, i) => (
+          <li
+          key={i}
+          className="background w-71 h-70 flex flex-col items-center pt-10 gap-6"
+            onClick={() => handleBannerClick(i)}
+          
+          >
+            <img src={el.img} alt="" />
+            <h2 className="text-center text-base font-medium w-56">{el.title}</h2>
+            {el.arrow && <ArrowRight color='#fff' />}
+          </li>
+        ))}
+      </ul>
       </div>
 
       <PaymentModal 

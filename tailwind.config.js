@@ -12,7 +12,10 @@ export default {
           100: '#1D1D1D',
           200: '#0E0E0E'
         },
-        'my-gray': '#A5A5A5',
+        'my-gray': {
+          100: '#EDEDED',
+          200: '#A5A5A5'
+        },
         'my-red': '#C53720',
         'my-green': '#3CC051',
         'my-white': '#FFFFFF'
@@ -23,7 +26,9 @@ export default {
       backgroundImage: {
         'header': "url('./src/assets/img/banner.png')",
         carPhone: "url('./assets/img/carphone.png')",
-        services: "url('./assets/img/services.png')"
+        services: "url('./assets/img/services.png')",
+        company: "url('./assets/img/bgcompany.png')",
+        footer: "url('./assets/img/bgfooter.png')",
       },
       backgroundColor: {
         'my-black-100': '#1D1D1B',

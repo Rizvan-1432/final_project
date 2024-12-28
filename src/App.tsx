@@ -1,3 +1,4 @@
+import Footer from './layouts/Footer'
 import Header from './layouts/header/Header'
 import HomePage from './pages/HomePage'
 function App() {
@@ -8,8 +9,9 @@ function App() {
       <div className="w-full max-w-[1640px]">
         <Header />
         <HomePage />
+        <Footer />
       </div>
-    </div>
+    </div>  
   )
 }
 

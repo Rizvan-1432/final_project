@@ -11,6 +11,8 @@ import './index.css';
 import BatteryPage from './pages/BatteryPage.tsx';
 import OilPage from './pages/OilPage.tsx';
 import SparkPlugPage from './pages/SparkPlugPage.tsx';
+import AboutCompanyPage from './pages/AboutCompanyPage.tsx';
+import LicensePage from './pages/LicensePage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
     path: "/sparkplugs",
     element: <SparkPlugPage />,
   },
+  {
+    path: "/about",
+    element: <AboutCompanyPage />,
+  },
+  {
+    path: "/license",
+    element: <LicensePage />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

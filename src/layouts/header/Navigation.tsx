@@ -9,6 +9,7 @@ import { toggleBasket, removeFromBasket } from '../../redux/slice/basketSlice';
 import { RootState } from '../../redux/store';
 import { BasketItem } from '../../types/BasketState.types';
 import OrderModal from '../../components/modals/OrderModal';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -18,6 +19,7 @@ const Navigation = () => {
   const isBasketOpen = useSelector((state: RootState) => state.basket.isOpen);
   const basketItems = useSelector((state: RootState) => state.basket.items);
   const itemsCount = basketItems.reduce((sum, item) => sum + item.quantity, 0);
+  const navigate = useNavigate();
 
   const toggleSearch = () => {
     if (isBasketOpen) {
@@ -41,11 +43,18 @@ const Navigation = () => {
     dispatch(removeFromBasket(item));
   };
 
+  const handleNavigateToAbout = () => {
+    navigate('/about');
+    setIsCompanyMenuVisible(false);
+  };
+
   return (
     <>
       <nav className="w-full bg-black/85 text-white">
         <div className="max-w-[1128px] h-[100px] mx-auto px-4 flex justify-between items-center">
-          <img src={logo} alt="" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
           <div className="flex gap-7 items-center justify-between mt-3">
             <ul className="mt-7 h-[50px] flex gap-8">
               <li 
@@ -57,11 +66,20 @@ const Navigation = () => {
                 {isCompanyMenuVisible && (
                   <div className="absolute left-0 mt-2 bg-black/35 text-white rounded shadow-lg min-w-[228px]">
                     <ul className="w-full">
-                      <li className="hover:bg-red-500 flex items-center pl-1 h-10 mb-2 font-Geometria font-medium cursor-pointer whitespace-nowrap">
+                      <li 
+                        className="hover:bg-red-500 flex items-center pl-1 h-10 mb-2 font-Geometria font-medium cursor-pointer whitespace-nowrap"
+                        onClick={handleNavigateToAbout}
+                      >
                         О компании
                       </li>
                       <li className="hover:bg-red-500 flex items-center pl-1 h-10 mb-2 font-Geometria font-medium cursor-pointer whitespace-nowrap">
-                        Лицензии
+                        <Link 
+                          to="/license" 
+                          className="w-full h-full flex items-center"
+                          onClick={() => setIsCompanyMenuVisible(false)}
+                        >
+                          Лицензии
+                        </Link>
                       </li>
                       <li className="hover:bg-red-500 flex items-center pl-1 h-10 mb-2 font-Geometria font-medium cursor-pointer whitespace-nowrap">
                         Партнеры

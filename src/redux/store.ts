@@ -7,6 +7,9 @@ import batteryReducer from './slice/batterySlice';
 import oilReducer from './slice/oilSlice';
 import breadcrumbsReducer from './slice/breadcrumbsSlice';
 import sparkPlugReducer from './slice/sparkPlugSlice';
+import aboutReducer from './slice/aboutSlice';
+import contactReducer from './slice/contactSlice';
+import licenseReducer from './slice/licenseSlice';
 
 export const store = configureStore({
   reducer: {
@@ -15,7 +18,10 @@ export const store = configureStore({
     battery: batteryReducer,
     oil: oilReducer,
     breadcrumbs: breadcrumbsReducer,
-    sparkPlug: sparkPlugReducer
+    sparkPlug: sparkPlugReducer,
+    about: aboutReducer,
+    contact: contactReducer,
+    license: licenseReducer,
   },
 });
 

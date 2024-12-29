@@ -17,6 +17,9 @@ import services3 from '../assets/img/services3.png';
 import newscard1 from '../assets/img/newscard1.png';
 import newscard2 from '../assets/img/newscard2.png';
 import newscard3 from '../assets/img/newscard3.png';
+import { IBattery } from '../types/battery.types';
+import { IOil } from '../types/oil.types';
+import { ISparkPlug } from '../types/sparkPlug.types';
 
 export const database = {
   banner: [
@@ -45,7 +48,7 @@ export const database = {
       img: card1,
     },
     {
-      title: 'АККУМУЛЯТОРЫ',
+      title: 'МАСЛА',
       img: card2,
     },
     {
@@ -53,7 +56,7 @@ export const database = {
       img: card3,
     },
     { 
-      title: 'АККУМУЛЯТОРЫ',
+      title: 'СВЕЧИ НАКАЛИВАНИЯ',
       img: card4 },
     {
       title: 'АККУМУЛЯТОРЫ',
@@ -145,6 +148,78 @@ export const database = {
     { name: "Трос стояночного тормоза", price: 400, brand: "ATE", batteryCapacity: 0 },
     { name: "Педаль акселератора", price: 1500, brand: "Valeo", batteryCapacity: 0 }
     // не стал добавлять все и вся
-  ]
-
+  ],
+  batteries: [
+    {
+      id: 1,
+      title: "Аккумулятор VARTA Blue Dynamic",
+      brand: "VARTA",
+      capacity: 60,
+      voltage: 12,
+      price: 6500,
+      image: "/src/assets/img/battery1.jpg",
+      inStock: true
+    },
+    {
+      id: 2,
+      title: "Аккумулятор BOSCH S4",
+      brand: "BOSCH",
+      capacity: 70,
+      voltage: 12,
+      price: 7200,
+      image: "/src/assets/img/battery2.jpg",
+      inStock: true
+    },
+    // Добавьте больше аккумуляторов по необходимости
+  ] as IBattery[]
+  ,
+  oils: [
+    {
+      id: 1,
+      title: "Масло моторное SHELL Helix Ultra",
+      brand: "SHELL",
+      type: "Синтетическое",
+      viscosity: "5W-40",
+      volume: 4,
+      price: 3200,
+      image: "/src/assets/img/oil1.jpg",
+      inStock: true
+    },
+    {
+      id: 2,
+      title: "Масло моторное MOBIL Super 3000",
+      brand: "MOBIL",
+      type: "Синтетическое",
+      viscosity: "5W-30",
+      volume: 4,
+      price: 2800,
+      image: "/src/assets/img/oil2.jpg",
+      inStock: true
+    }
+  ] as IOil[]
+  ,
+  sparkPlugs: [
+    {
+      id: 1,
+      title: "Свеча накаливания BOSCH Duraterm",
+      brand: "BOSCH",
+      model: "0 250 403 009",
+      type: "Керамическая",
+      thread: "M10x1",
+      price: 1200,
+      image: "/src/assets/img/sparkplug1.jpg",
+      inStock: true
+    },
+    {
+      id: 2,
+      title: "Свеча накаливания NGK D-Power",
+      brand: "NGK",
+      model: "Y-547AS",
+      type: "Металлическая",
+      thread: "M12x1.25",
+      price: 950,
+      image: "/src/assets/img/sparkplug2.jpg",
+      inStock: true
+    }
+  ] as ISparkPlug[]
 };

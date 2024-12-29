@@ -3,6 +3,7 @@ export interface Product {
   price: number;
   brand: string;
   batteryCapacity: number;
+  quantity?: number;
 }
 
 export interface HeaderSearchState {

@@ -1,4 +1,6 @@
-const ArrowRight = ({ color }) => {
+import { ArrowRightProps } from '../types/ArrowRight.types';
+
+const ArrowRight: React.FC<ArrowRightProps> = ({ color }) => {
   return (
     <svg
       width="51"

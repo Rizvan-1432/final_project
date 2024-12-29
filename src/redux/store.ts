@@ -3,11 +3,19 @@ import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import headerSearchReducer from '../redux/slice/HeaderSearchSlice';
 import basketReducer from '../redux/slice/basketSlice';
+import batteryReducer from './slice/batterySlice';
+import oilReducer from './slice/oilSlice';
+import breadcrumbsReducer from './slice/breadcrumbsSlice';
+import sparkPlugReducer from './slice/sparkPlugSlice';
 
 export const store = configureStore({
   reducer: {
     headerSearch: headerSearchReducer, 
     basket: basketReducer,
+    battery: batteryReducer,
+    oil: oilReducer,
+    breadcrumbs: breadcrumbsReducer,
+    sparkPlug: sparkPlugReducer
   },
 });
 

@@ -32,7 +32,7 @@ const FooterBanner = () => {
         <ArrowUp className={`-rotate-90 ${currentIndex === 0 ? 'opacity-50' : ''}`} onClick={handlePreviousBanner}/>
         <ul className="flex items-center gap-11">
           {banner.slice(currentIndex, currentIndex + bannersToShow).map((e) => (
-            <li key={e}>{e.slice(2) && <img src={e} alt="" />}</li>
+            <li key={e}>{e.slice(2) && <img className='blur-0' src={e} alt="" />}</li>
           ))}
         </ul>
         <ArrowUp className={`rotate-90 ${currentIndex >= banner.length - bannersToShow ? 'opacity-50' : ''}`} onClick={handleNextBanner} />

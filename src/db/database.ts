@@ -20,6 +20,8 @@ import newscard3 from '../assets/img/newscard3.png';
 import { IBattery } from '../types/battery.types';
 import { IOil } from '../types/oil.types';
 import { ISparkPlug } from '../types/sparkPlug.types';
+import recvisite from '../assets/icons/recvisite.svg';
+import askAquestion from '../assets/icons/askAquestion.svg';
 
 export const database = {
   banner: [
@@ -157,7 +159,7 @@ export const database = {
       capacity: 60,
       voltage: 12,
       price: 6500,
-      image: "/src/assets/img/battery1.jpg",
+      image: "/src/assets/img/batteryvarta.jpg",
       inStock: true
     },
     {
@@ -167,10 +169,50 @@ export const database = {
       capacity: 70,
       voltage: 12,
       price: 7200,
-      image: "/src/assets/img/battery2.jpg",
+      image: "/src/assets/img/batteryvarta.jpg",
       inStock: true
     },
-    // Добавьте больше аккумуляторов по необходимости
+    {
+      id: 3,
+      title: "Аккумулятор BOSCH S4",
+      brand: "BOSCH",
+      capacity: 70,
+      voltage: 12,
+      price: 7200,
+      image: "/src/assets/img/batteryvarta.jpg",
+      inStock: true
+    },
+    {
+      id: 4,
+      title: "Аккумулятор BOSCH S4",
+      brand: "BOSCH",
+      capacity: 70,
+      voltage: 12,
+      price: 7200,
+      image: "/src/assets/img/batteryvarta.jpg",
+      inStock: true
+    },
+    {
+      id: 5,
+      title: "Аккумулятор BOSCH S4",
+      brand: "BOSCH",
+      capacity: 70,
+      voltage: 12,
+      price: 7200,
+      image: "/src/assets/img/batteryvarta.jpg",
+      inStock: true
+    },
+    {
+      id: 6,
+      title: "Аккумулятор BOSCH S4",
+      brand: "BOSCH",
+      capacity: 70,
+      voltage: 12,
+      price: 7200,
+      image: "/src/assets/img/batteryvarta.jpg",
+      inStock: true
+    },
+    
   ] as IBattery[]
   ,
   oils: [
@@ -182,7 +224,7 @@ export const database = {
       viscosity: "5W-40",
       volume: 4,
       price: 3200,
-      image: "/src/assets/img/oil1.jpg",
+      image: "/src/assets/img/oilhelix.webp",
       inStock: true
     },
     {
@@ -193,9 +235,53 @@ export const database = {
       viscosity: "5W-30",
       volume: 4,
       price: 2800,
-      image: "/src/assets/img/oil2.jpg",
+      image: "/src/assets/img/oilhelix.webp",
       inStock: true
-    }
+    },
+    {
+      id: 3,
+      title: "Масло моторное SHELL Helix Ultra",
+      brand: "SHELL",
+      type: "Синтетическое",
+      viscosity: "5W-40",
+      volume: 4,
+      price: 3200,
+      image: "/src/assets/img/oilhelix.webp",
+      inStock: true
+    },
+    {
+      id: 4,
+      title: "Масло моторное SHELL Helix Ultra",
+      brand: "SHELL",
+      type: "Синтетическое",
+      viscosity: "5W-40",
+      volume: 4,
+      price: 3200,
+      image: "/src/assets/img/oilhelix.webp",
+      inStock: true
+    },
+    {
+      id: 5,
+      title: "Масло моторное SHELL Helix Ultra",
+      brand: "SHELL",
+      type: "Синтетическое",
+      viscosity: "5W-40",
+      volume: 4,
+      price: 3200,
+      image: "/src/assets/img/oilhelix.webp",
+      inStock: true
+    },
+    {
+      id: 6,
+      title: "Масло моторное SHELL Helix Ultra",
+      brand: "SHELL",
+      type: "Синтетическое",
+      viscosity: "5W-40",
+      volume: 4,
+      price: 3200,
+      image: "/src/assets/img/oilhelix.webp",
+      inStock: true
+    },
   ] as IOil[]
   ,
   sparkPlugs: [
@@ -222,4 +308,9 @@ export const database = {
       inStock: true
     }
   ] as ISparkPlug[]
+  ,
+  icons: {
+    recvisite: recvisite,
+    askAquestion: askAquestion
+  }
 };

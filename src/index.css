@@ -117,3 +117,21 @@ body {
     opacity: 1;
   }
 }
+
+.bg-company {
+  background-image: url('./assets/img/bgcompany.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.border-cut {
+  clip-path: polygon(
+    40px 0,     /* Верхний левый срез */
+    100% 0,     /* Верхний край */
+    100% calc(100% - 10%),  /* Правый край до среза */
+    calc(100% - 40px) 100%,  /* Нижний правый срез */
+    0 100%,     /* Нижний край */
+    0 40px      /* Левый край до среза */
+  );
+}

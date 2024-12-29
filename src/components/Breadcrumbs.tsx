@@ -8,7 +8,9 @@ const routes: { [key: string]: string } = {
   '/': 'Главная',
   '/batteries': 'Аккумуляторы',
   '/oils': 'Масла',
-  '/sparkplugs': 'Свечи накаливания'
+  '/sparkplugs': 'Свечи накаливания',
+  '/about': 'О компании',
+  '/license': 'Лицензии'
 };
 
 const Breadcrumbs = () => {

@@ -12,6 +12,8 @@ const BatteryPage = () => {
   const { batteries, loading, error } = useAppSelector(state => state.battery);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    
     dispatch(setBatteries(database.batteries));
   }, [dispatch]);
 
@@ -43,13 +45,13 @@ const BatteryPage = () => {
       <div className="w-full max-w-[1640px]">
         <Header />
         <Breadcrumbs />
-        <div className="w-full">
+        <div className="w-full flex ">
           <div className="max-w-[1640px] mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold mb-6">Аккумуляторы</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {batteries.map(battery => (
                 <div key={battery.id} className="border rounded-lg p-4">
-                  <img src={battery.image} alt={battery.title} className="w-full h-48 object-cover" />
+                  <img src={battery.image} alt={battery.title} className="w-[330px] h-[330px] object-contain mx-auto" />
                   <h2 className="text-xl font-bold mt-2">{battery.title}</h2>
                   <p className="text-gray-600">{battery.brand}</p>
                   <p>Емкость: {battery.capacity} Ач</p>

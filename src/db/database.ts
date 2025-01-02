@@ -54,7 +54,7 @@ export const database = {
       img: card2,
     },
     {
-      title: 'АККУМУЛЯТОРЫ',
+      title: 'АКСЕСУАРЫ',
       img: card3,
     },
     { 
@@ -313,4 +313,98 @@ export const database = {
     recvisite: recvisite,
     askAquestion: askAquestion
   }
+};
+
+export const reviews = [
+  {
+    id: 1,
+    author: 'Александр',
+    text: 'Отличный аккумулятор, держит заряд даже в сильные морозы. Рекомендую!',
+    date: '2024-03-15',
+    rating: 5,
+    carModel: 'Toyota Camry',
+    purchaseType: 'Аккумулятор MAGNUM 60.0 LA',
+    userId: 'user1'
+  },
+  {
+    id: 2,
+    author: 'Михаил',
+    text: 'Хорошее соотношение цена-качество. Уже второй год полет нормальный.',
+    date: '2024-03-10',
+    rating: 4,
+    carModel: 'Kia Rio',
+    purchaseType: 'Аккумулятор MAGNUM 55.0 LA',
+    userId: 'user2'
+  },
+  {
+    id: 3,
+    author: 'Елена',
+    text: 'Быстрая доставка, профессиональная установка. Аккумулятор работает отлично.',
+    date: '2024-03-05',
+    rating: 5,
+    carModel: 'Hyundai Solaris',
+    purchaseType: 'Аккумулятор MAGNUM 60.0 LA',
+    userId: 'user3'
+  },
+  {
+    id: 4,
+    author: 'Дмитрий',
+    text: 'Приобрел по рекомендации друга. Качеством доволен, цена адекватная.',
+    date: '2024-02-28',
+    rating: 5,
+    carModel: 'Volkswagen Polo',
+    purchaseType: 'Аккумулятор MAGNUM 55.0 LA',
+    userId: 'user4'
+  },
+  {
+    id: 5,
+    author: 'Сергей',
+    text: 'Отличный сервис, грамотная консультация при выборе. Аккумулятор полностью устраивает.',
+    date: '2024-02-20',
+    rating: 4,
+    carModel: 'Skoda Octavia',
+    purchaseType: 'Аккумулятор MAGNUM 60.0 LA',
+    userId: 'user5'
+  }
+];
+
+export const magnumBattery = {
+  id: 1,
+  model: 'MAGNUM 60.0 LA',
+  capacity: 60,
+  voltage: 12,
+  price: 5500,
+  image: '/src/assets/img/batteryvarta.jpg',
+  images: ['/src/assets/img/batteryvarta.jpg'],
+  inStock: true,
+  shortDescription: 'Идеально подходит для легковых автомобилей среднего класса',
+  specifications: {
+    polarity: 'Прямая',
+    terminals: 'Европейский стандарт',
+    length: 242,
+    width: 175,
+    height: 190,
+    weight: 14.5,
+    startingCurrent: 500
+  },
+  features: [
+    'Увеличенный срок службы',
+    'Устойчивость к глубоким разрядам',
+    'Минимальный саморазряд',
+    'Не требует обслуживания',
+    'Усиленная конструкция корпуса',
+    'Стабильный пусковой ток'
+  ],
+  warranty: '2 года',
+  applications: [
+    'Легковые автомобили',
+    'Внедорожники',
+    'Микроавтобусы',
+    'Легкий коммерческий транспорт'
+  ],
+  recommendations: [
+    'Подходит для автомобилей с высоким энергопотреблением',
+    'Рекомендуется для эксплуатации в холодном климате',
+    'Оптимален для городского цикла использования'
+  ]
 };

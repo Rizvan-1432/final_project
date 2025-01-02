@@ -1,4 +1,3 @@
-const colors = require('tailwindcss/colors');
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -24,11 +23,11 @@ export default {
         'Geometria': ['Geometria', 'sans-serif']
       },
       backgroundImage: {
-        'header': "url('./src/assets/img/banner.png')",
-        carPhone: "url('./assets/img/carphone.png')",
-        services: "url('./assets/img/services.png')",
-        company: "url('./assets/img/bgcompany.png')",
-        footer: "url('./assets/img/bgfooter.png')",
+        'header': "url('/src/assets/img/banner.png')",
+        'carPhone': "url('/src/assets/img/carphone.png')",
+        'services': "url('/src/assets/img/services.png')",
+        'company': "url('/src/assets/img/bgcompany.png')",
+        'footer': "url('/src/assets/img/bgfooter.png')",
       },
       backgroundColor: {
         'my-black-100': '#1D1D1B',

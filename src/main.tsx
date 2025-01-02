@@ -13,6 +13,11 @@ import OilPage from './pages/OilPage.tsx';
 import SparkPlugPage from './pages/SparkPlugPage.tsx';
 import AboutCompanyPage from './pages/AboutCompanyPage.tsx';
 import LicensePage from './pages/LicensePage.tsx';
+import CatalogPage from './pages/Catalog.tsx'
+import PartnersPage from './pages/PartnersPage';
+import ReviewsPage from './pages/ReviewsPage';
+import MagnumBatteriesPage from './pages/MagnumBatteriesPage.tsx';
+import MagnumBatteryDetailPage from './pages/MagnumBatteryDetailPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -20,25 +25,45 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/batteries",
+    path: "catalog",
+    element: <CatalogPage />,
+  },
+  {
+    path: "batteries",
     element: <BatteryPage />,
   },
   {
-    path: "/oils",
+    path: "oils",
     element: <OilPage />,
   },
   {
-    path: "/sparkplugs",
+    path: "sparkplugs",
     element: <SparkPlugPage />,
   },
   {
-    path: "/about",
+    path: "about",
     element: <AboutCompanyPage />,
   },
   {
-    path: "/license",
+    path: "license",
     element: <LicensePage />,
-  }
+  },
+  {
+    path: "partners",
+    element: <PartnersPage />,
+  },
+  {
+    path: "reviews",
+    element: <ReviewsPage />,
+  },
+  {
+    path: "batteries/magnum",
+    element: <MagnumBatteriesPage />,
+  },
+  {
+    path: "batteries/magnum/:id",
+    element: <MagnumBatteryDetailPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

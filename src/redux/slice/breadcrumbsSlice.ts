@@ -26,4 +26,13 @@ const breadcrumbsSlice = createSlice({
 });
 
 export const { setCurrentPath, setBreadcrumbs, addBreadcrumb, clearBreadcrumbs } = breadcrumbsSlice.actions;
-export default breadcrumbsSlice.reducer; 
+export default breadcrumbsSlice.reducer;
+
+export const setBreadcrumbsForMagnumBattery = () => ({
+  type: 'breadcrumbs/setBreadcrumbs',
+  payload: [
+    { path: '/', label: 'Главная' },
+    { path: '/batteries', label: 'Аккумуляторы' },
+    { path: '', label: 'ПОДРОБНЕЕ' }
+  ]
+}); 

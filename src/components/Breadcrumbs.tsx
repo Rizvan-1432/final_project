@@ -10,7 +10,10 @@ const routes: { [key: string]: string } = {
   '/oils': 'Масла',
   '/sparkplugs': 'Свечи накаливания',
   '/about': 'О компании',
-  '/license': 'Лицензии'
+  '/license': 'Лицензии',
+  '/partners': 'Партнеры',
+  '/reviews': 'Отзывы клиентов',
+  '/catalog': 'Каталог'
 };
 
 const Breadcrumbs = () => {

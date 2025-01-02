@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import Button from '../../components/Button';
 import SliderLine from '../../components/SliderLine';
 import Navigation from './Navigation';
+import CallbackModal from '../../components/modals/CallbackModal';
 
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isCallbackModalOpen, setIsCallbackModalOpen] = useState(false);
 
   // Цвета для каждой линии
   const colors = ['bg-my-red', 'bg-white', 'bg-white', 'bg-white'];
@@ -37,6 +39,10 @@ const Header = () => {
           />
         ))}
       </div>
+      <CallbackModal 
+        isOpen={isCallbackModalOpen}
+        onClose={() => setIsCallbackModalOpen(false)}
+      />
     </header>
   );
 };

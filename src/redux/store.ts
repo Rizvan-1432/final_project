@@ -10,6 +10,12 @@ import sparkPlugReducer from './slice/sparkPlugSlice';
 import aboutReducer from './slice/aboutSlice';
 import contactReducer from './slice/contactSlice';
 import licenseReducer from './slice/licenseSlice';
+import catalogReducer from './slice/catalogSlice';
+import partnersReducer from './slice/partnersSlice';
+import reviewsReducer from './slice/reviewsSlice';
+import magnumBatteriesReducer from './slice/magnumBatteriesSlice';
+import magnumBatteryDetailReducer from './slice/magnumBatteryDetailSlice';
+import callbackReducer from './slice/callbackSlice';
 
 export const store = configureStore({
   reducer: {
@@ -22,6 +28,12 @@ export const store = configureStore({
     about: aboutReducer,
     contact: contactReducer,
     license: licenseReducer,
+    catalog: catalogReducer,
+    partners: partnersReducer,
+    reviews: reviewsReducer,
+    magnumBatteries: magnumBatteriesReducer,
+    magnumBatteryDetail: magnumBatteryDetailReducer,
+    callback: callbackReducer
   },
 });
 
